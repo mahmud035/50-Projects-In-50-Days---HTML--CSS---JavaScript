@@ -20,7 +20,7 @@ body {
 }
 
 .panel {
-  background-size: auto 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 80vh;
@@ -35,10 +35,10 @@ body {
 
 .panel h3 {
   position: absolute;
-  left: 20px;
+  left: 7%;
   bottom: 20px;
   font-size: 1.5rem;
-  display: none;
+  opacity: 0;
 }
 
 .panel.active {
@@ -46,7 +46,8 @@ body {
 }
 
 .panel.active h3 {
-  display: block;
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
 
 @media (max-width: 480px) {
