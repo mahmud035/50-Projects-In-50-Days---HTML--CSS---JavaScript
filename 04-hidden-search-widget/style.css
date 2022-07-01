@@ -34,7 +34,6 @@ body {
 .btn {
   background-color: #fff;
   border: 0;
-
   cursor: pointer;
   font-size: 24px;
   position: absolute;
@@ -55,5 +54,5 @@ body {
 }
 
 .search.active .btn {
-  transform: translateX(198px); 
+  transform: translateX(198px);
 }
