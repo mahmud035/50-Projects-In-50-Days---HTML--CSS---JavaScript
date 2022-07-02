@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
-  overflow-x: hidden;
+  overflow-x: hidden; /* remove horizontal scroll bar */
 }
 
 h1 {
@@ -20,13 +20,13 @@ h1 {
 }
 
 .box {
-  background-color: steelblue;
+  background: steelblue;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 400px;
   height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
   border-radius: 10px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
@@ -34,7 +34,7 @@ h1 {
   transition: transform 0.4s ease;
 }
 
-.box:nth-of-type(even) {
+.box:nth-child(even) {
   transform: translateX(-400%);
 }
 
